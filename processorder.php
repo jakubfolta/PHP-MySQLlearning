@@ -12,6 +12,15 @@
       $tireqty = $_POST['tireqty'];
       $oilqty = $_POST['oilqty'];
       $sparkqty = $_POST['sparkqty'];
+
+      define('TIREPRICE', 100);
+      define('OILPRICE', 10);
+      define('SPARKPRICE', 4);
+
+      echo 'Tireprice '.TIREPRICE.'<br />';
+      echo 'Oilprice '.OILPRICE.'<br />';
+      echo 'Sparkprice '.SPARKPRICE.'<br />';
+
       echo '<p>Your order is as follows: </p>';
       echo $tireqty. ' Tires<br />';
       echo $oilqty. ' bottles of oil<br />';
