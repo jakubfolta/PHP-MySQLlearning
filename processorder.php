@@ -31,15 +31,22 @@
       # Using ternary operator
 
       $grade=30;
-      echo ($grade >= 40 ? '<p style="color:green"> Your score is ' .$grade. '. You passed the examination!! </p>' : '<p style="color:red"> Your score is ' .$grade. '. You failed the examination!! </p>')
+      echo ($grade >= 40 ? '<p style="color:green"> Your score is ' .$grade. '. You passed the examination!! </p>' : '<p style="color:red"> Your score is ' .$grade. '. You failed the examination!! </p>');
 
       # Type operator
 
       class sampleClass{};
       $myObject = new sampleClass();
       if ($myObject instanceof sampleClass)
-       echo  "myObject is an instance of sampleClass";
+      echo "myObject is an instance of sampleClass".'<br />';
 
+      # While loop
+
+      $num = 1;
+      while ($num <= 5 ){
+       echo $num."<br />";
+       $num++;
+      }
 
     ?>
   </body>
