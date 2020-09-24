@@ -69,7 +69,7 @@
      echo "<b>Bob's Auto Parts</b><br/><br/>";
      echo "<b>Customer Orders</b> <br/><hr/>";
 
-     @$fp = fopen("$document_root/orders_details.txt", 'rb');
+     @$fp = fopen("$document_root/PHPLearning/orders_details.txt", 'rb');
      flock($fp, LOCK_SH); // lock file for reading
 
      if (!$fp) {
